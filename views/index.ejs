@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NASA</title>
+    <% include ./partials/header %>
+  </head>
+  <body>
+    <h1>NASA</h1>
+    <b>API URL:</b>
+    <form>
+      <input type="submit" name="day" value="image of the day" id='day'>
+      <input type="submit" name="Neptune" value="Neptune" id='neptune'>
+      <input type="submit" name="Uranus" value="Uranus" id='uranus'>
+      <input type="submit" name="Saturn" value="Saturn" id='saturn'>
+      <input type="submit" name="Jupiter" value="Jupiter" id='jupiter'>
+      <input type="submit" name="Mars" value="Mars" id='mars'>
+      <input type="submit" name="Earth" value="Earth" id='earth'>
+      <input type="submit" name="Venus" value="Venus" id='venus'>
+      <input type="submit" name="Mercury" value="Mercury" id='mercury'>
+      <input type="submit" name="Pluto" value="Pluto" id='pluto'>
+    </form>
+      <pre id="reqObject"></pre>
+      <img id="apod_img_id" width="250px"/>
+      <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+      <p id="copyright"></p>
+      <h3 id="apod_title"></h3>
+      <p id="apod_explaination"></p>
+      <br/>
+      <b>Return Object:</b>
+      <pre id="returnObject"></pre>
+  </body>
+</html>

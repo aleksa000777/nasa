@@ -1,0 +1,27 @@
+{
+  "name": "nasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksa000777/nasa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksa000777/nasa/issues"
+  },
+  "homepage": "https://github.com/aleksa000777/nasa#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
+  }
+}
