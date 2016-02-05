@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NASA</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+        <!-- show massages that come back with autheticaion -->
+        <% if(message.length > 0) { %>
+          <div class="alert alert-danger"><%= message %></div>
+        <% } %>
+
+        <!-- signup form -->
+        <form action="/signup" method="post">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" class="form-control">
+          </div>
+
+          <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+        </form>
+
+        <hr>
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Or go <a href="/">back</a>.</p>
+
+      </div>
+    </div>
+  </body>
+</html>

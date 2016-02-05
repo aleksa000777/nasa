@@ -1,29 +1,44 @@
-var express = require('express')
-var morgan = require('morgan')
-var mongoose = require('mongoose')
-var bodyParser = require('body-parser')
-require('dotenv').load();
+var express      =   require('express');
+var mongoose     =   require('mongoose');
+var bodyParser   =   require('body-parser');
+var morgan       =   require('morgan');
+var port         =   process.env.PORT || 8080;
+var passport     =   require('passport');
+var flash        =   require('connect-flash');
+var session      =   require('express-session');
+var cookieParser =   require('cookie-parser')
 
-var app = express();
-app.set('view engine', 'ejs');
 
-app.use(express.static('./public'));
+require('./config/passport')(passport);  //pass passport for configuration
 
+var app         =   express();
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/nasa-1');
+var mongoPath = process.env.MONGOLAB_URI || 'mongodb://localhost/naso-01'
+var mongoose = require('mongoose');
+mongoose.connect(mongoPath);
+
 app.use(morgan('dev'));
+app.use(cookieParser());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-var indexRouting = require('./routes/index');
-var nasaRouter = require('./routes/api/planets');
+app.set('view engine', 'ejs');
+app.use(express.static('./public'));
 
-app.use('/', indexRouting);
+// required for passport
+app.use(session({secret: 'aleksandramatiyevborzunovaandreevna'})); //session secret
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash()); //use connect flash for flash messages stored in session
+
+
+// routes
+require('./app/routes.js')(app,passport); //load routes and pass in our app and fully configured passport
+var nasaRouter = require('./routes/api/planets.js');
 app.use('/api/planets', nasaRouter);
 
 
-
-
-var port = 8080;
-app.listen(port, function(){
-  console.log('listening on potr: '+port);
-})
+// listen
+app.listen(port,function(){
+  console.log('listening on port ' + port);
+});
