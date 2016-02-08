@@ -14,8 +14,8 @@
       <div class="row">
         <strong>user</strong>: <%= user %><br>
 
-        <form>
-          <input type="button" name="day" value="image of the day" id='day'>
+
+          <button type="button" id='day'></button>
           <div class="planet-list">
             <button type="button" id='neptune'>neptune</button>
             <button type="button" id='uranus'>uranus</button>
@@ -27,10 +27,10 @@
             <button type="button" id='mercury'>mercury</button>
             <button type="button" id='pluto'>pluto</button>
           </div>
-        </form>
+
         <div id="today">
           <pre id="reqObject"><%= day.date %></pre>
-          <img id="apod_img_id" width="250px"/>
+          <img id="apod_img_id" width="350px"/>
           <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0" src='<%=day.url %>'></iframe>
           <p id="copyright"><%= day.copyright %></p>
           <h3 id="apod_title"><%= day.title %></h3>

@@ -5,7 +5,6 @@ $(function(){
 
 function init(){
   today();
-  console.log(planets.mercury);
   planet();
 
 }
@@ -14,7 +13,7 @@ function init(){
 function today(){
   $('#day').on('click', function(e){
     e.preventDefault();
-    console.log('clicked');
+    $('#planet').text('');
     var $data = $('#today')
     $data.toggle();
   })
@@ -23,8 +22,9 @@ function today(){
 function planet(){
   $('.planet-list').on('click', 'button', function(e){
     e.preventDefault();
-    console.log('heeer');
-    var planet = this.id;  
-    $('#planet').text(planets[planet].info)
+    $('#today').hide();
+    var planet = this.id;
+    $('#planet').text(planets[planet].info);
+
   })
 }
