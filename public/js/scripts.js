@@ -16,8 +16,17 @@ function today(){
     $('#planet').text('');
     var $data = $('#today')
     $data.toggle();
+    $.ajax({
+        url:'/profile/day',
+        method: 'get',
+        success: function(data){
+          console.log(data, 'tttttttt');
+        }
+
   })
+})
 }
+
 
 function planet(){
   $('.planet-list').on('click', 'button', function(e){
