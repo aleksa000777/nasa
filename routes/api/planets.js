@@ -9,4 +9,16 @@ router.get('/', function(req, res){
   });
 });
 
+// ======aleksa====
+
+router.get('/:name', function(req, res){
+  console.log(req.params.name);
+  console.log('req.body', req.params);
+  Planet.findOne({ title: req.params.name }, function(err, planet) {
+    res.json({ Planet: planet });
+  });
+});
+
+//=====aleksa=====
+
 module.exports = router;

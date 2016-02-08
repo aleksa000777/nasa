@@ -25,20 +25,17 @@ module.exports = function(app, passport){
   require('dotenv').load()
 
   app.get('/profile', isLoggedIn, function(req, res){
-    // request("https://api.nasa.gov/planetary/apod?api_key=" + process.env.SECRETACCESSKEY, function(err, response, body){
       res.render('profile.ejs', {
         user: req.user,
-        // day: JSON.parse(response.body)
-
-      // })
     })
   })
   app.get('/profile/day', function(req,res){
     request("https://api.nasa.gov/planetary/apod?api_key=" + process.env.SECRETACCESSKEY, function(err, response, body){
       res.json(JSON.parse(response.body));
-
   })
 })
+
+
 
   // logout
   app.get('/logout', function(req,res){

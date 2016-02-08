@@ -1,0 +1,128 @@
+[
+          {
+            "title": "Mercury",
+            "info": "Mercury's eccentric orbit takes the small planet as close as 47 million km (29 million miles) and as far as 70 million km (43 million miles) from the sun. If one could stand on the scorching surface of Mercury when it is at its closest point to the sun, the sun would appear more than three times as large as it does when viewed from Earth.",
+            "img": "#",
+            "stats": "Mercury has a large metalic core with a radius of about 1,240 miles (2,000 km), about 80% of the planet's radius",
+            "temp": "Daytime on Mercury is 6 times hotter than the hottest place on Earth. And nighttime can be more than twice as cold as the coldest place on Earth",
+            "size": "1/3",
+            "earthday": "175.97",
+            "earthyear": "88",
+            "moon": "0",
+            "type": "Terrestrial. Mercury is a rocky world that looks a lot like our moon",
+            "distance":"0.39 AU"
+
+          },
+          {
+            "title": "Venus",
+            "info":"Similar in structure and size to Earth, Venus' thick, toxic atmosphere traps heat in a runaway greenhouse effect. A permanent layer of clouds traps heat, creating surface temperatures hot enough to melt lead. Glimpses below the clouds reveal volcanoes and deformed mountains. Venus spins slowly in the opposite direction of most planets.",
+            "img": "#",
+            "stats": "cloaked in mystery. It's cratered and volcanic lansscape is hidden beneath a thick blanket of clouds",
+            "temp": "hottest world in our solar system. Surface temperatures on Venus reach 900 degrees F(480 C), more than hot enough to melt lead",
+            "size": "80% ",
+            "earthday": "117",
+            "earthyear": "225",
+            "moon": "0",
+            "type": "Terrestrial. Carbon dioxide, nitrogen, with clouds of sulfuric acid droplets",
+            "distance":"0.72 AU"
+          },
+
+          {
+            "title": "Earth",
+            "info":"Earth, our home planet, is the only planet in our solar system known to harbor life - life that is incredibly diverse. All the things we need to survive exist under a thin layer of atmosphere that separates us from the cold, airless void of space.",
+            "img": "#",
+            "stats": "4 layers. Earth's interior is composed of four layers - the crust, the mantle, the outer core and the inner core",
+            "temp": "61F",
+            "size": "3.959 mi",
+            "earthday": "24 hours",
+            "earthyear": "365.2564",
+            "moon": "1",
+            "type": "Terrestrial. Earth is a roku planet, with a solid and dynamic surface of mountains, valleys, canyons, plains and so much more",
+            "distance":"1 AU"
+          },
+
+          {
+            "title": "Mars",
+            "info":"Mars is a cold desert world. It is half the diameter of Earth and has the same amount of dry land. Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons and weather, but its atmosphere is too thin for liquid water to exist for long on the surface. There are signs of ancient floods on Mars, but evidence for water now exists mainly in icy soil and thin clouds.",
+            "img": "#",
+            "stats": "The grander canyon. Valles Marineris, or Mariner Valley, is a vast canyon system that runs along the Martian equator. Valles Marineris is 2500 miles (4000 km) long and reaches depths of up to 4 miles(7 km).",
+            "temp": "-81F",
+            "size": "1/2 ",
+            "earthday": "24.617 hours",
+            "earthyear": "687 days",
+            "moon": "2",
+            "type": "Terrestrial. Mars' solid surface has been altered by volcanoes, impacts, crustal movement, and atmospheric effects such as dust storms",
+            "distance":"1.52 AU"
+          },
+
+          {
+            "title": "Jupiter",
+            "info":"Jupiter, the most massive planet in our solar system -- with dozens of moons and an enormous magnetic field -- forms a kind of miniature solar system. Jupiter does resemble a star in composition, but it did not grow big enough to ignite. The planet's swirling cloud stripes are punctuated by massive storms such as the Great Red Spot, which has raged for hundreds of years.",
+            "img": "#",
+            "stats": "3 rings. Jupiter's faint outer rings are called the gossamer rings. The thick inner ring is called the halo",
+            "temp": "-190F",
+            "size": "11.2 times larger ",
+            "earthday": "9 hours 55 minutes",
+            "earthyear": "12 years",
+            "moon": "67",
+            "type": "Gas giant. Gas giants don't have solid surfaces, but Jupiter may have solid core about the size of Earth",
+            "distance":"5.2 AU"
+          },
+
+          {
+            "title": "Saturn",
+            "info":"Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. All four gas giant planets have rings -- made of chunks of ice and rock -- but none are as spectacular or as complicated as Saturn's. Like the other gas giants, Saturn is mostly a massive ball of hydrogen and helium.",
+            "img": "#",
+            "stats": "7 rings. Saturn's rings span up to 175,000 miles(282,000 km), about three quaters of the distance between the Earth and its moon.",
+            "temp": "-270F",
+            "size": "11.2 times larger ",
+            "earthday": "10.7 hours",
+            "earthyear": "29 years",
+            "moon": "62",
+            "type": "Gas giant. It does not have a solid surface",
+            "distance":"9.5 AU"
+          },
+
+          {
+            "title": "Uranus",
+            "info":"Uranus is the only giant planet whose equator is nearly at right angles to its orbit. A collision with an Earth-sized object may explain the unique tilt. Nearly a twin in size to Neptune, Uranus has more methane in its mainly hydrogen and helium atmosphere than Jupiter or Saturn. Methane gives Uranus its blue tint.",
+            "img": "#",
+            "stats": "13 rings. Uranus has faint rings. The inner rings are narrow and dark and the outer rings are brightly colored",
+            "temp": "-350F",
+            "size": "4 times bigger ",
+            "earthday": "17 hours",
+            "earthyear": "84 years",
+            "moon": "27",
+            "type": "Ice giant. Uranus is an ice giant. Most(80% or more) of the planet's mass is made up of a hot dense fluid of 'icy' materials - water(H2O), methane(CH4) and ammonia(NH3) - above a small rocky core",
+            "distance":"19.19 AU"
+          },
+
+          {
+            "title": "Neptune",
+            "info":"Dark, cold and whipped by supersonic winds, Neptune is the last of the hydrogen and helium gas giants in our solar system. More than 30 times as far from the sun as Earth, the planet takes almost 165 Earth years to orbit our sun. In 2011 Neptune completed its first orbit since its discovery in 1846.",
+            "img": "#",
+            "stats": "In 1989, Voyager 2 tracked a large, oval-shaped, dark storm in Neptune's southern hemosphere. This 'Great Dark Spot' was large enough to contain the entire Earth",
+            "temp": "-350F",
+            "size": "4 times bigger ",
+            "earthday": "16 hours",
+            "earthyear": "165 years",
+            "moon": "14",
+            "type": "Ice giant. Neptune is a sister ice giant to Uranus. It is mostly made of a very thick, very hot combination of water(H2O), ammonia(NH3), and methane(CH4) over a possible heavier, Earth-sized solid core",
+            "distance":"30.07 AU"
+          },
+
+          {
+            "title": "Pluto",
+            "info":"Discovered in 1930, Pluto was long considered our solar system's ninth planet. But after the discovery of similar intriguing worlds deeper in the distant Kuiper Belt, icy Pluto was reclassified as a dwarf planet. Findings by NASA's New Horizons in 2015 revealed for the first time how that Pluto is a complex and mysterious world. Information about Pluto and its largest moon, Charon, provide insight into the collision believed to have formed the dwarf planet and moons we see today.",
+            "img": "#",
+            "stats": "Reclassified in 2006. Once counted as our solar system's ninth planet, Pluto is now the best known of an intriguing new class of worlds called dwarf planets.",
+            "temp": "-390F",
+            "size": "1/6, even smaller than own Moon ",
+            "earthday": "6.4 days",
+            "earthyear": "248 years",
+            "moon": "5",
+            "type": "Dwarf planet. Atmosphere: Nitrogen, Methane, Carbon Monoxide Pluto has a thin atmosphere that expands when the dwarf planet comes closer to the sun and collapses as it moves farther away.",
+            "distance":"39.48 AU"
+          }
+
+]
