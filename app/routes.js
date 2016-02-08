@@ -20,11 +20,19 @@ module.exports = function(app, passport){
     failureFlash : true //allow flash messages
   }));
 
-  app.get('/profile', isLoggedIn, function(req, res){
-    res.render('profile.ejs', {
-      user: req.user
-    });
-  });
+
+  var request      =   require('request')
+  require('dotenv').load()
+
+  app.get('/profile', isLoggedIn, function(req, res, next){
+    request("https://api.nasa.gov/planetary/apod?api_key=" + process.env.SECRETACCESSKEY, function(err, response, body){
+      res.render('profile.ejs', {
+        user: req.user,
+        day: JSON.parse(response.body)
+
+      })
+    })
+  })
 
   // logout
   app.get('/logout', function(req,res){
@@ -38,7 +46,7 @@ module.exports = function(app, passport){
     failureFlash : true //allow flash messages
   }));
 
-  
+
 };
 
 

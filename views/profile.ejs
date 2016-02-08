@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>NASA</title>
     <% include ./partials/header %>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
@@ -14,41 +12,35 @@
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
       </div>
       <div class="row">
-        <!-- <div class="col-sm-6">
-          <div class="well">
-            <h3><span class="fa fa-user"></span>Local</h3>
+        <strong>user</strong>: <%= user %><br>
 
-            <p>
-              <strong>id</strong>: <%= user._id %><br>
-              <strong>email</strong>: <%= user.local.email %><br>
-              <strong>password</strong>: <%= user.local.password %><br>
+        <form>
+          <input type="button" name="day" value="image of the day" id='day'>
+          <div class="planet-list">
+            <button type="button" id='neptune'>neptune</button>
+            <button type="button" id='uranus'>uranus</button>
+            <button type="button" id='saturn'>saturn</button>
+            <button type="button" id='jupiter'>jupiter</button>
+            <button type="button" id='mars'>mars</button>
+            <button type="button" id='earth'>earth</button>
+            <button type="button" id='venus'>venus</button>
+            <button type="button" id='mercury'>mercury</button>
+            <button type="button" id='pluto'>pluto</button>
+          </div>
+        </form>
+        <div id="today">
+          <pre id="reqObject"><%= day.date %></pre>
+          <img id="apod_img_id" width="250px"/>
+          <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0" src='<%=day.url %>'></iframe>
+          <p id="copyright"><%= day.copyright %></p>
+          <h3 id="apod_title"><%= day.title %></h3>
+          <p id="apod_explaination"><%= day.explanation %></p>
+        </div>
+        <div id="planet">
 
-            </p>
-          </div> -->
-          <form>
-      <input type="button" name="day" value="image of the day" id='day'>
-      <input type="button" name="Neptune" value="Neptune" id='neptune'>
-      <input type="button" name="Uranus" value="Uranus" id='uranus'>
-      <input type="button" name="Saturn" value="Saturn" id='saturn'>
-      <input type="button" name="Jupiter" value="Jupiter" id='jupiter'>
-      <input type="button" name="Mars" value="Mars" id='mars'>
-      <input type="button" name="Earth" value="Earth" id='earth'>
-      <input type="button" name="Venus" value="Venus" id='venus'>
-      <input type="button" name="Mercury" value="Mercury" id='mercury'>
-      <input type="button" name="Pluto" value="Pluto" id='pluto'>
-    </form>
-      <pre id="reqObject"></pre>
-      <img id="apod_img_id" width="250px"/>
-      <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
-      <p id="copyright"></p>
-      <h3 id="apod_title"></h3>
-      <p id="apod_explaination"></p>
-      <br/>
-      <b>Return Object:</b>
-      <pre id="returnObject"></pre>
+
         </div>
       </div>
     </div>
-
   </body>
 </html>

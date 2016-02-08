@@ -6,7 +6,9 @@ var port         =   process.env.PORT || 8080;
 var passport     =   require('passport');
 var flash        =   require('connect-flash');
 var session      =   require('express-session');
-var cookieParser =   require('cookie-parser')
+var cookieParser =   require('cookie-parser');
+var request      =   require('request')
+require('dotenv').load()
 
 
 require('./config/passport')(passport);  //pass passport for configuration
