@@ -4,3 +4,6 @@ body{
 #today{
   display: none;
 }
+#container{
+  margin-left: -40%;
+}
