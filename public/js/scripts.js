@@ -24,7 +24,7 @@ function today(){
         success: function(data){
           var $el = $('#today');
           $el.append( $('<h2>').text(data.title) )
-          $el.append( $('<img>').attr('src', data.url) )
+          $el.append( $('<iframe>').attr('src', data.url) )
           $el.append( $('<p>').text(data.explanation) )
         }
     })

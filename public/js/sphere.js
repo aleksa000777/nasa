@@ -101,7 +101,7 @@ var container, stats;
 
 			function onDocumentMouseMove( event ) {
 
-				mouseX = ( event.clientX - windowHalfX + 240 );
+				mouseX = ( event.clientX - windowHalfX );
 				mouseY = ( event.clientY - windowHalfY );
 
 			}
