@@ -10,16 +10,21 @@
     <div class="container" id="main-page">
       <div class="page-header text-center">
         <h1>NASA explorer</h1>
-        <a href="/logout" class="btn btn-default btn-sm logout-btn">Logout</a>
+        <a href="/logout" class="btn btn-danger btn-md logout-btn">Exit</a>
       </div>
       <div class="row">
         <!-- <strong>user</strong>: <%= user %><br> -->
-          <button type="button" id='day'>Picture Of The Day</button><br>
-          <figure>
-            <img src="/img/solar.jpg" id="main"alt="">
-            <figcaption>Solar System</figcaption>
-          </figure>
-<div class="solar-system">
+          <div class="buttons-list">
+            <figure class="buttons-nav">
+              <img src="/img/apod2.png" id="day"alt="">
+              <figcaption>APOD</figcaption>
+            </figure>
+            <figure class="buttons-nav">
+              <img src="/img/solar.jpg" id="main"alt="">
+              <figcaption>Solar System</figcaption>
+            </figure>
+          </div>
+          <div class="solar-system">
               <div class="sun">
                 <figure>
                   <img src="/img/sm/sun-sm.gif" alt="" id='Sun'>
@@ -83,27 +88,17 @@
                   </figure>
                </li>
             </ul>
-            <!-- <button type="button" id='Mercury'>mercury</button> -->
-            <!-- <button type="button" id='Venus'>venus</button> -->
-            <!-- <button type="button" id='Earth'>earth</button> -->
-            <!-- <button type="button" id='Mars'>mars</button> -->
-            <!-- <button type="button" id='Jupiter'>jupiter</button> -->
-            <!-- <button type="button" id='Saturn'>saturn</button> -->
-            <!-- <button type="button" id='Uranus'>uranus</button> -->
-            <!-- <button type="button" id='Neptune'>neptune</button> -->
-            <!-- <button type="button" id='Pluto'>pluto</button> -->
           </div>
       </div>
 
         <div id="today">
-
         </div>
         <div id="planet">
           <div class="row">
-            <div id="sphere" class="col-md-8">
+            <div id="sphere" class="col-md-7">
               <div id="container"></div>
             </div>
-            <div id="description" class="col-md-4">
+            <div id="description" class="col-md-5">
               <div id="title"></div>
               <div id="info"></div>
               <!-- <div id="img"><img src="#" alt=""></div> -->
