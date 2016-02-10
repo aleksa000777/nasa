@@ -6,7 +6,7 @@ var container, stats;
 			var group;
 			var mouseX = 0, mouseY = 0;
 
-			var windowHalfX = window.innerWidth / 2;
+			var windowHalfX = window.innerWidth / 3;
 			var windowHalfY = window.innerHeight / 2;
 
 			init(img);
@@ -52,8 +52,13 @@ var container, stats;
 					canvas.height / 2,
 					canvas.width / 2
 				);
-				gradient.addColorStop( 0.1, 'rgba(210,210,210,1)' );
-				gradient.addColorStop( 1, 'rgba(255,255,255,1)' );
+
+
+
+
+
+				gradient.addColorStop( 0.1, 'rgba(210,210,210,0)' );
+				gradient.addColorStop( 1, 'rgba(255,255,255,0)' );
 
 				context.fillStyle = gradient;
 				context.fillRect( 0, 0, canvas.width, canvas.height );
@@ -68,8 +73,8 @@ var container, stats;
 				mesh.rotation.x = - Math.PI / 2;
 				group.add( mesh );
 
-				renderer = new THREE.CanvasRenderer();
-				renderer.setClearColor( 0xffffff );
+				renderer = new THREE.WebGLRenderer({alpha:true});
+				renderer.setClearColor( 0xffffff,0 );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );

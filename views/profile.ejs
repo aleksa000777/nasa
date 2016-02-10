@@ -6,27 +6,94 @@
     <% include ./partials/header %>
   </head>
   <body>
-    <div class="container">
+    <img src="/img/load.gif" alt="" id="load">
+    <div class="container" id="main-page">
       <div class="page-header text-center">
         <h1>NASA explorer</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/logout" class="btn btn-default btn-sm logout-btn">Logout</a>
       </div>
       <div class="row">
-        <strong>user</strong>: <%= user %><br>
-
-
-          <button type="button" id='day'></button>
-          <div class="planet-list">
-            <button type="button" id='Neptune'>neptune</button>
-            <button type="button" id='Uranus'>uranus</button>
-            <button type="button" id='Saturn'>saturn</button>
-            <button type="button" id='Jupiter'>jupiter</button>
-            <button type="button" id='Mars'>mars</button>
-            <button type="button" id='Earth'>earth</button>
-            <button type="button" id='Venus'>venus</button>
-            <button type="button" id='Mercury'>mercury</button>
-            <button type="button" id='Pluto'>pluto</button>
+        <!-- <strong>user</strong>: <%= user %><br> -->
+          <button type="button" id='day'>Picture Of The Day</button><br>
+          <figure>
+            <img src="/img/solar.jpg" id="main"alt="">
+            <figcaption>Solar System</figcaption>
+          </figure>
+<div class="solar-system">
+              <div class="sun">
+                <figure>
+                  <img src="/img/sm/sun-sm.gif" alt="" id='Sun'>
+                  <figcaption>Sun</figcaption>
+                </figure>
+              </div>
+              <div class="planet-list">
+                <ul>
+                <li>
+                  <figure>
+                    <img src="/img/sm/mercury-sm.png" alt="" id='Mercury'>
+                    <figcaption>Mercury</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/venus-sm.png" alt="" id='Venus'>
+                    <figcaption>Venus</figcaption>
+                  </figure>
+                </li>
+                <li class="earth">
+                  <figure>
+                    <img src="/img/sm/earth-sm.png" alt="" id='Earth'>
+                    <figcaption>Earth</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/mars-sm.png" alt="" id='Mars'>
+                    <figcaption>Mars</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/jupiter-sm.png" alt="" id='Jupiter'>
+                    <figcaption>Jupiter</figcaption>
+                  </figure>
+                </li>
+                <li class="saturn">
+                  <figure>
+                    <img src="/img/sm/saturn-sm.png" alt="" id='Saturn'>
+                    <figcaption>Saturn</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/uranus-sm.png" alt="" id='Uranus'>
+                    <figcaption>Uranus</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/neptune-sm.png" alt="" id='Neptune'>
+                    <figcaption>Neptune</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/sm/pluto-sm.png" alt="" id='Pluto'>
+                    <figcaption>Pluto</figcaption>
+                  </figure>
+               </li>
+            </ul>
+            <!-- <button type="button" id='Mercury'>mercury</button> -->
+            <!-- <button type="button" id='Venus'>venus</button> -->
+            <!-- <button type="button" id='Earth'>earth</button> -->
+            <!-- <button type="button" id='Mars'>mars</button> -->
+            <!-- <button type="button" id='Jupiter'>jupiter</button> -->
+            <!-- <button type="button" id='Saturn'>saturn</button> -->
+            <!-- <button type="button" id='Uranus'>uranus</button> -->
+            <!-- <button type="button" id='Neptune'>neptune</button> -->
+            <!-- <button type="button" id='Pluto'>pluto</button> -->
           </div>
+      </div>
 
         <div id="today">
 

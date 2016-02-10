@@ -1,18 +1,37 @@
 console.log('...loadedweee');
 $(function(){
+  // loadlogo();
   init();
 })
 
 function init(){
   today();
   planet();
+  main();
 
+}
+
+function loadlogo(){
+  $( "#main-page" ).delay( 5000 ).fadeIn( 2000 );
+  $('#load').delay( 5000 ).fadeOut( 1000 );
+
+}
+
+function main(){
+  $('#main').on('click', function(e){
+    e.preventDefault();
+    $('.solar-system').show();
+    $('#description').hide();
+    $('#container').empty();
+    $('#today').empty();
+  })
 }
 
 
 function today(){
   $('#day').on('click', function(e){
     e.preventDefault();
+    $('.solar-system').hide();
     $('#description').hide();
     $('#container').empty();
     $('#today').empty();
@@ -34,8 +53,9 @@ function today(){
 
 // var img = '';
 function planet(){
-  $('.planet-list').on('click', 'button', function(e){
+  $('.planet-list').on('click', 'img', function(e){
     e.preventDefault();
+    $('.solar-system').hide();
     $('#description').show();
     $('#today').empty();
     $('#container').empty();
