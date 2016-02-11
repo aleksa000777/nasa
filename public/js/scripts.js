@@ -35,6 +35,7 @@ function today(){
     e.preventDefault();
     $('.solar-system').hide();
     // $('#description').hide();
+    console.log('click happend');
     $('#title,#info,#stats,#temp,#size,#earthday,#earthyear,#moon,#type,#distance').empty();
     $('#container').empty();
     $('#today').empty();
@@ -51,6 +52,7 @@ function today(){
           $el.append( $('<p>').text(data.explanation) )
         }
     })
+    console.log('ajax came throw');
   })
 }
 
