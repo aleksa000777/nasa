@@ -15,7 +15,7 @@ require('./config/passport')(passport);  //pass passport for configuration
 
 var app         =   express();
 
-var mongoPath = process.env.MONGOLAB_URI || 'mongodb://localhost/naso-01'
+var mongoPath = process.env.MONGOLAB_URI || 'mongodb://localhost/naso-02'
 var mongoose = require('mongoose');
 mongoose.connect(mongoPath);
 

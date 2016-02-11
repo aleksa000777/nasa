@@ -1,6 +1,6 @@
 console.log('...loadedweee');
 $(function(){
-  // loadlogo();
+  loadlogo();
   init();
 })
 
@@ -8,8 +8,6 @@ function init(){
   today();
   planet();
   main();
-  iframe();
-  starsun();
 
 }
 
@@ -30,9 +28,7 @@ function main(){
     $('#today').empty();
   })
 }
-function iframe(){
-    $('iframe').load(function(){$(this).height($(this).contents().outerHeight());$(this).width($(this).contents().outerWidth());});
-}
+
 
 function today(){
   $('#day').on('click', function(e){
@@ -50,27 +46,16 @@ function today(){
         success: function(data){
           var $el = $('#today');
           $el.append( $('<h2>').text(data.title) )
-          $el.append( $('<iframe>').attr('src', data.hdurl).attr('id','img-day').attr('scrolling', "no" ) );
+          $el.append( $('<img>').attr('src', data.hdurl).attr('id','img-day').attr('scrolling', "no" ) );
           $el.append( $('<p>').text(data.explanation) )
         }
     })
   })
 }
 
-function starsun(){
-  $('.sun').on('click','img', function(e){
-    e.preventDefault();
-    $('.solar-system').hide();
-    $('#today').empty();
-    $('#container').empty();
-    var starSun = this.id;
-    console.log(starSun,'sunnnnn');
-    createsphere(starSun);
-  })
-}
 
 function planet(){
-  $('.planet-list').on('click', 'img', function(e){
+  $('.solar-system').on('click', 'img', function(e){
     e.preventDefault();
     $('.solar-system').hide();
     $('#today').empty();
@@ -90,8 +75,6 @@ function planet(){
       $('#moon').append($('<h4>').text('Moons:')).append($('<p>').text(data.Planet.moon));
       $('#type').append($('<h4>').text('Type:')).append($('<p>').text(data.Planet.type));
       $('#distance').append( $('<img>').attr('src', '../img/icons/distance.png') ).append( $('<p>').text(data.Planet.distance) );
-
-
 
       createsphere(data.Planet.title);
       }

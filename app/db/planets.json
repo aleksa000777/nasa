@@ -1,5 +1,19 @@
 [
           {
+            "title": "Sun",
+            "info": "The sun is a star, a hot ball of glowing gases at the heart of our solar system. Its influence extends far beyond the orbits of distant Neptune and Pluto. Without the sun's intense energy and heat, there would be no life on Earth. And though it is special to us, there are billions of stars like our sun scattered across the Milky Way galaxy.",
+            "img": "#",
+            "stats": "Big blast. Coronal Mass Ejections send billions of tons of particles into space that disturb. A collision with Earth's magnetospherecan cause bright auroras and can even damage electronics",
+            "temp": "Superheated. Sun's core temp is about 27 000 000 F",
+            "size": "10^6",
+            "earthday": "-",
+            "earthyear": "-",
+            "moon": "0",
+            "type": "Yellow dwaft. Medium-sized star",
+            "distance":"150 million km (93 million miles) to Earth"
+
+          },
+          {
             "title": "Mercury",
             "info": "Mercury's eccentric orbit takes the small planet as close as 47 million km (29 million miles) and as far as 70 million km (43 million miles) from the sun. If one could stand on the scorching surface of Mercury when it is at its closest point to the sun, the sun would appear more than three times as large as it does when viewed from Earth.",
             "img": "#",
