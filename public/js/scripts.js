@@ -47,8 +47,12 @@ function today(){
         success: function(data){
           var $el = $('#today');
           $el.append( $('<h2>').text(data.title) )
-          // $el.append( $('<iframe>').attr('src', data.hdurl).attr('id','img-day').attr('scrolling', "no" ) );
-          $el.append( $('<img>').attr('src', data.hdurl).attr('id','img-day').attr('scrolling', "no" ) );
+          if(data.media_type==="video"){
+            $el.append( $('<iframe>').attr('src', data.url).attr('id','video-day') );
+          }
+          else{
+            $el.append( $('<img>').attr('src', data.hdurl).attr('id','img-day').attr('scrolling', "no" ) );
+          }
           $el.append( $('<p>').text(data.explanation) )
         }
     })
