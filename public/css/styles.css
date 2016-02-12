@@ -11,10 +11,13 @@
 
 
 body{
+  background-color: black;
   background-image: url('../img/space.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  /*background-position: center;*/
+  background-attachment: fixed;
+  /*height: 100%;*/
   height: 100vh;
   color: white;
   font-family: 'Play', sans-serif;
