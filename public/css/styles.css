@@ -91,6 +91,10 @@ figure img{
   width: 100px;
   height: 100px;
 }
+
+.planet-list img{
+  cursor: pointer;
+}
 .planet-list ul{
   display: inline-block;
   width: 100%;

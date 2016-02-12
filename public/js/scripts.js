@@ -8,6 +8,7 @@ function init(){
   today();
   planet();
   main();
+  active_planet();
 
 }
 
@@ -87,4 +88,18 @@ function planet(){
       }
     })
   })
+}
+
+
+//hover planet selector
+function handlerIn(){
+  $(this).addClass('active')
+  $('.planet-list li').not('.active').fadeTo('fast', 0.5);
+}
+function handlerOut(){
+  $('.planet-list li').fadeTo('fast', 1);
+  $('.planet-list li').removeClass('active');
+}
+function active_planet(){
+  $( '.planet-list li' ).mouseenter( handlerIn ).mouseleave( handlerOut );
 }
