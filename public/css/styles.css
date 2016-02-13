@@ -215,6 +215,7 @@ img#Pluto{
 @media screen and (min-width: 1500px) {
   #container{
     margin-left: -100%;
+    margin-top: -15%;
   }
 
 }
