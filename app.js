@@ -38,6 +38,9 @@ app.use(flash()); //use connect flash for flash messages stored in session
 require('./app/routes.js')(app,passport); //load routes and pass in our app and fully configured passport
 var nasaRouter = require('./routes/api/planets.js');
 app.use('/api/planets', nasaRouter);
+// 
+// var userRouter = require('./routes/api/users.js');
+// app.use('/api/users', userRouter)
 
 
 // listen
