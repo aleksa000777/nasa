@@ -111,6 +111,9 @@ figure img{
   margin-left: 2em;
   margin-top: -10%;
 }
+#container{
+  margin-left: -10%;
+}
 
 img#Sun{
   width: 100%;
