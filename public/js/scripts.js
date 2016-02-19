@@ -15,6 +15,7 @@ function init(){
 function loadlogo(){
   $( "#main-page" ).stop().delay( 5000 ).fadeIn( 2000 );
   $('#load').stop().delay( 5000 ).fadeOut( 1000 );
+  $("#load").empty();
 
 }
 
@@ -95,13 +96,11 @@ function planet(){
 function active_planet(){
     $('.planet-list li img, img#Sun, img#main, img#day')
         .hover(function() {
-          console.log("hover");
             $(this).stop().animate({
               opacity: '0.8',
               borderWidth: "2px",
           }, 'fast');
         }, function() {
-          console.log("mouse leave");
             $(this).stop().animate({
               opacity: '1',
               borderWidth: "0px",
