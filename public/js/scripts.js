@@ -47,7 +47,7 @@ function today(){
         method: 'get',
         success: function(data){
           var $el = $('#today');
-          $el.append( $('<h2>').text(data.title) )
+          $el.append( $('<h1>').text(data.title) )
           if(data.media_type==="video"){
             $el.append( $('<iframe>').attr('src', data.url).attr('id','video-day') );
           }
@@ -73,7 +73,7 @@ function planet(){
       url: '/api/planets/'+planet,
       method: 'get',
       success: function(data){
-      $('#title').append( $('<h2>').text(data.Planet.title) );
+      $('#title').append( $('<h1>').text(data.Planet.title) );
       $('#info').text(data.Planet.info);
       $('#stats').append($('<h4>').text('Facts:')).append($('<p>').text(data.Planet.stats));
       $('#temp').append( $('<img>').attr('src', '../img/icons/therm2.png') ).append( $('<p>').text(data.Planet.temp));
