@@ -13,8 +13,8 @@ function init(){
 }
 
 function loadlogo(){
-  $( "#main-page" ).delay( 5000 ).fadeIn( 2000 );
-  $('#load').delay( 5000 ).fadeOut( 1000 );
+  $( "#main-page" ).stop().delay( 5000 ).fadeIn( 2000 );
+  $('#load').stop().delay( 5000 ).fadeOut( 1000 );
 
 }
 
