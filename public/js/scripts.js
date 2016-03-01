@@ -13,8 +13,10 @@ function init(){
 }
 
 function loadlogo(){
-  $( "#main-page, .solar" ).stop().delay( 5000 ).fadeIn( 2000 );
-  $('#load').stop().delay( 5000 ).fadeOut( 1000 );
+  $("#main-page, .solar").stop().velocity("fadeIn", { delay: 5000, duration: 2000 })
+  $('#load').stop().velocity("fadeOut", { delay: 5000, duration: 1000 })
+  // $( "#main-page, .solar" ).stop().delay( 5000 ).fadeIn( 2000 );
+  // $('#load').stop().delay( 5000 ).fadeOut( 1000 );
   $("#load").empty();
 
 }
