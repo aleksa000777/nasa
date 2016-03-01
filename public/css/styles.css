@@ -83,6 +83,7 @@ iframe#video-day{
   text-align: center;
   cursor: pointer;
   border: 0px solid transparent;
+  z-index: 9999;
 }
 #load{
   width: 100%;
