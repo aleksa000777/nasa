@@ -4,6 +4,9 @@
 #main-page{
   display: none;
 }
+.solar{
+  display: none;
+}
 
 
 
@@ -38,7 +41,7 @@ body{
   height: 80%;
   width: 80%;
   margin-bottom: 10px;
-  
+
 }
 
 

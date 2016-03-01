@@ -13,7 +13,7 @@ function init(){
 }
 
 function loadlogo(){
-  $( "#main-page" ).stop().delay( 5000 ).fadeIn( 2000 );
+  $( "#main-page, .solar" ).stop().delay( 5000 ).fadeIn( 2000 );
   $('#load').stop().delay( 5000 ).fadeOut( 1000 );
   $("#load").empty();
 
